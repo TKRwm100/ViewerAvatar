@@ -1,0 +1,94 @@
+﻿<Window x:Class="TransportX.Plugins.Toukaitetudou.AvaterTest.Form.SettingForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TransportX.Plugins.Toukaitetudou.AvaterTest.Form"
+        mc:Ignorable="d"
+        Title="SettingForm" Height="450" Width="800" >
+    <Window.DataContext>
+        <local:SettingFormModel x:Name="Model"/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="10" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0" Margin="0 5 0 5">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="X軸移動" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                <local:FloatTextBox HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding TransX.Value, Mode=TwoWay,UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0" Margin="0 5 0 5">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Y軸移動" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                <local:FloatTextBox HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding TransY.Value, Mode=TwoWay,UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="0" Margin="0 5 0 5">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Z軸移動" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                <local:FloatTextBox HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding TransZ.Value, Mode=TwoWay,UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+            </Grid>
+            
+            <Grid Grid.Row="3" Grid.Column="0" Margin="0 5 0 5">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="回転X" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding QuatX.Value}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="0" Margin="0 5 0 5">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="回転Y" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding QuatY.Value}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="0" Margin="0 5 0 5">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="回転Z" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding QuatZ.Value}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="0" Margin="0 5 0 5">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="回転W" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding QuatW.Value}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+            </Grid>
+        </Grid >
+        <GroupBox Header="回転" Grid.Column="1" VerticalAlignment="Top">
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0" Margin="0 5 0 5">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="X軸回転" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                    <local:FloatTextBox HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding RotateX.Value, Mode=TwoWay,UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+                </Grid>
+            <Grid Grid.Row="1" Grid.Column="0" Margin="0 5 0 5">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Y軸回転" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                    <local:FloatTextBox HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding RotateY.Value, Mode=TwoWay,UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="0" Margin="0 5 0 5">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Z軸回転" VerticalAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="89,0,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Center"/>
+                    <TextBox HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+                    <local:FloatTextBox HorizontalAlignment="Left" Margin="92,0,0,0" TextWrapping="Wrap" Text="{Binding RotateZ.Value, Mode=TwoWay,UpdateSourceTrigger=Explicit}" VerticalAlignment="Center" Width="120" TextAlignment="Right"/>
+                </Grid>
+                <Button Content="適用" Grid.Row="3" Grid.Column="0" Width="80" Margin="132,0,0,0" HorizontalAlignment="Left" Command="{Binding ApplyEulerCommand}"/>
+            </Grid>
+            
+        </GroupBox>
+    </Grid>
+</Window>

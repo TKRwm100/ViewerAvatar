@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0-windows7.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<EnableDynamicLoading>true</EnableDynamicLoading>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DebugType>none</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <DebugType>none</DebugType>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="ReactiveProperty" Version="9.8.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="TransportX">
+	    <HintPath>..\..\TransportX\_out\bin\Debug\TransportX.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
