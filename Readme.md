@@ -2,7 +2,7 @@
 
 Copyright (c) 2026- Toukaitetudou
 
-TransportXにおけるキーボード操作でカメラを移動するビューワー用アバターを提供します
+[TransportX](https://github.com/automatic9045/TransportX)におけるキーボード操作でカメラを移動するビューワー用アバターを提供します
 
 ## ライセンス
 
