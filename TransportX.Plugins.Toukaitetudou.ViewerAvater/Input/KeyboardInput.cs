@@ -71,7 +71,7 @@ namespace TransportX.Plugins.Toukaitetudou.AvaterTest.Input
         {
             resetKey = inputManager.ObserveKey(Key.R);
             openFormKey = inputManager.ObserveKey(Key.Enter);
-            openFormKey.Pressed += OpenFormKey_Pressed; ;
+            openFormKey.Pressed += OpenFormKey_Pressed;
             worldKey = inputManager.ObserveKey(Key.LeftCtrl);
             speedKey = inputManager.ObserveKey(Key.LeftShift);
             leftKey = inputManager.ObserveKey(Key.A);
