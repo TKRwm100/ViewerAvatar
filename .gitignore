@@ -4,3 +4,4 @@ obj
 x64
 /packages
 *.user
+launchSettings.json
