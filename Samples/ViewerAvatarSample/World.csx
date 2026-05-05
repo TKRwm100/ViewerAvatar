@@ -1,6 +1,6 @@
 #load "__Editor.csx"
 
-Avatar.Load(@"ViewerAvater.dll");
+Avatar.Load(@"ViewerAvatar.dll");
 Avatar.Locate(0, 0, -1, 0.2, 45, 0, 2, 0);
 
 Models.LoadList("Models.txt");

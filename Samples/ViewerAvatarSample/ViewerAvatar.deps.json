@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "ViewerAvater/1.0.0": {
+      "ViewerAvatar/1.0.0": {
         "dependencies": {
           "ReactiveProperty": "9.8.0",
           "TransportX": "0.3.60502.1"
         },
         "runtime": {
-          "ViewerAvater.dll": {}
+          "ViewerAvatar.dll": {}
         }
       },
       "ReactiveProperty/9.8.0": {
@@ -174,7 +174,7 @@
     }
   },
   "libraries": {
-    "ViewerAvater/1.0.0": {
+    "ViewerAvatar/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

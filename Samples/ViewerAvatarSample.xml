@@ -5,6 +5,6 @@
     <Author>automatic9045 and Toukaitetudou</Author>
     <Path>$(bin)TransportX.Scripting.dll</Path>
     <Args>
-        <Arg>ViewerAvaterSample\World.csx</Arg>
+        <Arg>ViewerAvatarSample\World.csx</Arg>
     </Args>
 </WorldInfo>
