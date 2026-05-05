@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TransportX.Spatial;
 
-namespace TransportX.Plugins.Toukaitetudou.AvaterTest.Form
+namespace TransportX.Plugins.Toukaitetudou.ViewerAvatar.Form
 {
     /// <summary>
     /// SettingForm.xaml の相互作用ロジック

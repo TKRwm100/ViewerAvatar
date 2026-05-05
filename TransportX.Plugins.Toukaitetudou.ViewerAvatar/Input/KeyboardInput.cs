@@ -1,7 +1,7 @@
 ﻿using System.Windows.Input;
 using TransportX.Input;
 
-namespace TransportX.Plugins.Toukaitetudou.AvaterTest.Input
+namespace TransportX.Plugins.Toukaitetudou.ViewerAvatar.Input
 {
     internal class KeyboardInput : IInput
     {

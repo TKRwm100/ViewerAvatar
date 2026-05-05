@@ -3,7 +3,7 @@ using System;
 using System.Windows.Input;
 using TransportX.Spatial;
 
-namespace TransportX.Plugins.Toukaitetudou.AvaterTest.Form
+namespace TransportX.Plugins.Toukaitetudou.ViewerAvatar.Form
 {
     public class SettingFormModel:IDisposable
     {

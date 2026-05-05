@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace TransportX.Plugins.Toukaitetudou.AvaterTest.Form
+namespace TransportX.Plugins.Toukaitetudou.ViewerAvatar.Form
 {
     #region class NumericTextBoxBase<T>
     /// <summary>数値入力テキストボックスの基底クラス</summary>

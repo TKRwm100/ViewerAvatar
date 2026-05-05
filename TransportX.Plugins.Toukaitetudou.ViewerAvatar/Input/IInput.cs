@@ -1,4 +1,4 @@
-﻿namespace TransportX.Plugins.Toukaitetudou.AvaterTest.Input
+﻿namespace TransportX.Plugins.Toukaitetudou.ViewerAvatar.Input
 {
     internal interface IInput
     {

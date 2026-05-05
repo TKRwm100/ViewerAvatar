@@ -6,15 +6,15 @@ using TransportX.Avatars;
 using TransportX.Dependency;
 using TransportX.Input;
 using TransportX.Network;
-using TransportX.Plugins.Toukaitetudou.AvaterTest.Form;
-using TransportX.Plugins.Toukaitetudou.AvaterTest.Input;
+using TransportX.Plugins.Toukaitetudou.ViewerAvatar.Form;
+using TransportX.Plugins.Toukaitetudou.ViewerAvatar.Input;
 using TransportX.Rendering;
 using TransportX.Spatial;
 using TransportX.Traffic;
 
-namespace TransportX.Plugins.Toukaitetudou.AvaterTest
+namespace TransportX.Plugins.Toukaitetudou.ViewerAvatar
 {
-    public class Avater : AvatarBase
+    public class Avatar : AvatarBase
     {
 
         private readonly IReadOnlyList<IInput> Inputs;
@@ -54,7 +54,7 @@ namespace TransportX.Plugins.Toukaitetudou.AvaterTest
         float deltaLowTranslation = 0.1f;
         float deltaLowRotation = float.Pi / 180f * 0.001f;
         SettingForm? Form;
-        public Avater(PluginLoadContext context, AvatarBuilder builder) : base(context, builder)
+        public Avatar(PluginLoadContext context, AvatarBuilder builder) : base(context, builder)
         {
             Reset();
             DriverViewpoint = new DriverViewpoint(this, new SixDoF(0, 0, 0));

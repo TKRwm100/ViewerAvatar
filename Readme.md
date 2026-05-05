@@ -1,4 +1,4 @@
-﻿# ViewerAvater
+﻿# ViewerAvatar
 
 Copyright (c) 2026- Toukaitetudou
 
@@ -10,7 +10,7 @@ Copyright (c) 2026- Toukaitetudou
 
 ## ダウンロード
 
-こちら→ [Releases](https://github.com/TKRwm100/ViewerAvater/releases)
+こちら→ [Releases](https://github.com/TKRwm100/ViewerAvatar/releases)
 
 ## 操作方法
 
